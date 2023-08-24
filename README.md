@@ -18,20 +18,20 @@ I have experience with programming languages python, matlab, C++ in applications
 ----
 ## Projects
 
-**Development and implementation of a robotic system to carry out an efficient and continuous quality control on seedlings grown in Industrial Nurseries in La Libertad - Peru (_Match 2019 - June 2021_)**
+### Development and implementation of a robotic system to carry out an efficient and continuous quality control on seedlings grown in Industrial Nurseries in La Libertad - Peru (_Match 2019 - June 2021_)
 
 - Design a software architecture to manage the different sources of information (cameras, seedling positions, deep learning predictions).
 - Deploy the IoT platform based on NodeJS to manage the transplanting process of seedlings in a local and cloud environment.
 
 
-**Robotic system for efficient and continuous quality control of the growth of industrial nursery seedlings in the La Libertad region of Peru (_March 2021 - August 2023_)**
+### Robotic system for efficient and continuous quality control of the growth of industrial nursery seedlings in the La Libertad region of Peru (_March 2021 - August 2023_)
 
 - Learned and summarized the studies of object detection/segmentation and object tracking techniques with deep learning, also classification with convolutional networks.
 - Implement techniques researched and compared to find the best one according to precision, inference time and computing resource consuming.
 - Develop classification methods based on convolutional neural networks.
 - Optimize the best one with tools such as TensorRT and deploy in a JetsonXavier hardware with ROS Noetic.
 
-**Development and implementation of a Multifunctional Automated Machine for the Sowing of Seeds of Different Sizes in multi-cell trays and Pealing of Seedlings according to the quality of Growth in Nurseries of the La Libertad Region-Peru (_March 2023 - December 2023_)**
+### Development and implementation of a Multifunctional Automated Machine for the Sowing of Seeds of Different Sizes in multi-cell trays and Pealing of Seedlings according to the quality of Growth in Nurseries of the La Libertad Region-Peru (_March 2023 - December 2023_)
 
 - Learned and summarized the studies of object detection/segmentation techniques with deep learning, also classification methods based on self-supervised learning (autoencoders).
 - Develop a classification method to categorize seedlings in good or not-good based on a criteria developed by experts in agroindustrial farms.
