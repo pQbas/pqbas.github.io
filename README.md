@@ -34,9 +34,7 @@ This project involved enhancing a computer vision system and its IIoT platform t
 - Deploying the IIoT application on an external web server via the FRED service for better transplanting process oversight regardless of the monitor's location.
 - Acquiring transplanting data through a database connection, and analyzing average transplantation times over two days.
 
-**Technologies Used:**
-
-Ubuntu 18.04 Desktop virtual machine, IIoT platform, FRED service, computer vision system, database connection.
+**Technologies Used:** Ubuntu 18.04 Desktop virtual machine, IIoT platform, FRED service, computer vision system, database connection.
 
 
 
@@ -51,9 +49,7 @@ In this project is introduced a method to detect and classify blueberries' ripen
 - Implementation of two deep learning models for blueberry detection and ripeness classification.
 - Attainment of a 90.74% accuracy rate in the blueberry classification task with the proposed models.
 
-**Technologies Used:**
-
-Mask R-CNN, convolutional neural network (CNN), Python, OpeCVz
+**Technologies Used:** Mask R-CNN, convolutional neural network (CNN), Python, OpeCVz
 
 #### Development and implementation of a Multifunctional Automated Machine for the Sowing of Seeds of Different Sizes in multi-cell trays and Pealing of Seedlings according to the quality of Growth in Nurseries of the La Libertad Region-Peru (_March 2023 - December 2023_)
 
@@ -64,9 +60,8 @@ This project presents an innovative solution for automated grading of artichoke 
 - Deployment of two deep learning models, Mask R-CNN and YOLOv8, for the tasks of detection and instance segmentation.
 - Development of a Multi-Layer Perceptron (MLP) which classified seedlings into good or not good categories with an accuracy of 85.19% after being trained with specific parameters.
 
-**Technologies Used:**
+**Technologies Used:** Depth cameras, Mask R-CNN, YOLOv8, Multi-Layer Perceptron (MLP).
 
-Depth cameras, Mask R-CNN, YOLOv8, Multi-Layer Perceptron (MLP).
 ## 5. Personal Projects
 
 ### Machine Learning Models Review 
