@@ -41,6 +41,6 @@ I have experience with programming languages python, matlab, C++ in applications
 
 ## Publications
 
-- P. Cubas, J. Alva, S. Prado. “IIoT system for monitoring and analysis of the transplanting process of the artichoke seedling”. 2022 IEEE ANDESCON. https://ieeexplore.ieee.org/document/9989611
+- P. Cubas, J. Alva, S. Prado. “IIoT system for monitoring and analysis of the transplanting process of the artichoke seedling”. 2022 IEEE ANDESCON. https://doi.org/10.1109/ANDESCON56260.2022.9989611
 
-- P. Cubas, E. Fiestas, S. Prado. “Detection and Classification of ventura-blueberries in five levels of ripeness from images taken during pre-harvest stage using Deep Learning techniques”. 2022 IEEE ANDESCON. https://ieeexplore.ieee.org/document/9989578
+- P. Cubas, E. Fiestas, S. Prado. “Detection and Classification of ventura-blueberries in five levels of ripeness from images taken during pre-harvest stage using Deep Learning techniques”. 2022 IEEE ANDESCON. https://doi.org/10.1109/ANDESCON56260.2022.9989578
