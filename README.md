@@ -1,4 +1,7 @@
 # Machine Learning Engeenier Portfolio
+
+**Technical Skills: Python, Pytorch, AWS**
+
 ## Profile Description
 I have experience with programming languages python, matlab, C++ in applications related to Robotics, Artificial Vision and IoT. My interests are focused in artificial intelligence, robotics and academic research.
 
