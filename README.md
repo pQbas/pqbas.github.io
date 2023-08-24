@@ -36,3 +36,11 @@ I have experience with programming languages python, matlab, C++ in applications
 - Learned and summarized the studies of object detection/segmentation techniques with deep learning, also classification methods based on self-supervised learning (autoencoders).
 - Develop a classification method to categorize seedlings in good or not-good based on a criteria developed by experts in agroindustrial farms.
 - Implement techniques and compare to find the best one according to precision, inference time and computing resource consuming.
+
+---
+
+## Publications
+
+- P. Cubas, J. Alva, S. Prado. “IIoT system for monitoring and analysis of the transplanting process of the artichoke seedling”. 2022 IEEE ANDESCON. https://ieeexplore.ieee.org/document/9989611
+
+- P. Cubas, E. Fiestas, S. Prado. “Detection and Classification of ventura-blueberries in five levels of ripeness from images taken during pre-harvest stage using Deep Learning techniques”. 2022 IEEE ANDESCON. https://ieeexplore.ieee.org/document/9989578
