@@ -27,25 +27,47 @@ I have experience with programming languages python, matlab, C++ in applications
 
 [Publication](https://doi.org/10.1109/ANDESCON56260.2022.9989611)
 
-- Design a software architecture to manage the different sources of information (cameras, seedling positions, deep learning predictions).
-- Deploy the IoT platform based on NodeJS to manage the transplanting process of seedlings in a local and cloud environment.
+The project involved enhancing a computer vision system and its IIoT platform to assist a cartesian robot in transplanting artichoke seedlings and ensuring quality control. Key enhancements included:
+
+- Improving portability and security by encapsulating the IIoT application, which processes images and detects seedlings, within an Ubuntu 18.04 Desktop virtual machine.
+- Extending a software module's functionality to communicate between local and external servers.
+- Deploying the IIoT application on an external web server via the FRED service for better transplanting process oversight regardless of the monitor's location.
+- Acquiring transplanting data through a database connection, and analyzing average transplantation times over two days.
+
+**Technologies Used:**
+
+Ubuntu 18.04 Desktop virtual machine, IIoT platform, FRED service, computer vision system, database connection.
+
 
 
 #### Robotic system for efficient and continuous quality control of the growth of industrial nursery seedlings in the La Libertad region of Peru (_March 2021 - August 2023_)
 
 [Publication](https://doi.org/10.1109/ANDESCON56260.2022.9989578)
 
-- Learned and summarized the studies of object detection/segmentation and object tracking techniques with deep learning, also classification with convolutional networks.
-- Implement techniques researched and compared to find the best one according to precision, inference time and computing resource consuming.
-- Develop classification methods based on convolutional neural networks.
-- Optimize the best one with tools such as TensorRT and deploy in a JetsonXavier hardware with ROS Noetic.
+The article introduces a method to detect and classify blueberries' ripeness levels in an agro-industrial farm, leveraging the Mask R-CNN and a custom convolutional neural network (CNN). Key steps include:
+
+- Creation of a dataset for training and validation.
+- Manual generation of masks for blueberries in images to label them based on five ripeness stages.
+- Implementation of two deep learning models for blueberry detection and ripeness classification.
+- Attainment of a 90.74% accuracy rate in the blueberry classification task with the proposed models.
+
+**Technologies Used:**
+
+Mask R-CNN, convolutional neural network (CNN), Python, OpeCVz
 
 #### Development and implementation of a Multifunctional Automated Machine for the Sowing of Seeds of Different Sizes in multi-cell trays and Pealing of Seedlings according to the quality of Growth in Nurseries of the La Libertad Region-Peru (_March 2023 - December 2023_)
 
-- Learned and summarized the studies of object detection/segmentation techniques with deep learning, also classification methods based on self-supervised learning (autoencoders).
-- Develop a classification method to categorize seedlings in good or not-good based on a criteria developed by experts in agroindustrial farms.
-- Implement techniques and compare to find the best one according to precision, inference time and computing resource consuming.
+Summary:
+The study presents an innovative solution for automated grading of artichoke seedlings, a pivotal step in the transplantation workflow.
 
+- Acquisition of seedling images from vertical and horizontal viewpoints using depth cameras.
+- Segmentation of these images to extract morphological attributes: width, height, and leaf area.
+- Deployment of two deep learning models, Mask R-CNN and YOLOv8, for the tasks of detection and instance segmentation.
+- Development of a Multi-Layer Perceptron (MLP) which classified seedlings into good or not good categories with an accuracy of 85.19% after being trained with specific parameters.
+
+**Technologies Used:**
+
+Depth cameras, Mask R-CNN, YOLOv8, Multi-Layer Perceptron (MLP).
 ## 5. Personal Projects
 
 ### Machine Learning Models Review 
