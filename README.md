@@ -1,4 +1,3 @@
-# pqbas.github.io
 # Data Scientist
 
 
