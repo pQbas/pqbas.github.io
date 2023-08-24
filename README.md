@@ -2,7 +2,8 @@
 I have experience with programming languages python, matlab, C++ in applications related to Robotics, Artificial Vision and IoT. My interests are focused in artificial intelligence, robotics and academic research.
 
 ### Education
-Electronics Engeneering, Bachellor
+Bachelor's degree in Electronics Engeneering
+
 Universidad Privada Antenor Orrego (UPAO), Trujillo, Perú
 
 ### Work Experience
