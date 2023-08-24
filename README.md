@@ -20,7 +20,7 @@ I have experience with programming languages python, matlab, C++ in applications
 - Deploy the IoT platform based on NodeJS to manage the transplanting process of seedlings in a local and cloud environment.
 
 
-**Research Assistant. Robotic system for efficient and continuous quality control of the growth of industrial nursery seedlings in the La Libertad region of Peru (_March 2021 - August 2023_)**
+**Robotic system for efficient and continuous quality control of the growth of industrial nursery seedlings in the La Libertad region of Peru (_March 2021 - August 2023_)**
 
 - Learned and summarized the studies of object detection/segmentation and object tracking techniques with deep learning, also classification with convolutional networks.
 - Implement techniques researched and compared to find the best one according to precision, inference time and computing resource consuming.
