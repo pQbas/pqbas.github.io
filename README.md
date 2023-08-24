@@ -27,7 +27,7 @@ I have experience with programming languages python, matlab, C++ in applications
 
 [Publication](https://doi.org/10.1109/ANDESCON56260.2022.9989611)
 
-The project involved enhancing a computer vision system and its IIoT platform to assist a cartesian robot in transplanting artichoke seedlings and ensuring quality control. Key enhancements included:
+This project involved enhancing a computer vision system and its IIoT platform to assist a cartesian robot in transplanting artichoke seedlings and ensuring quality control. Key enhancements included:
 
 - Improving portability and security by encapsulating the IIoT application, which processes images and detects seedlings, within an Ubuntu 18.04 Desktop virtual machine.
 - Extending a software module's functionality to communicate between local and external servers.
@@ -44,7 +44,7 @@ Ubuntu 18.04 Desktop virtual machine, IIoT platform, FRED service, computer visi
 
 [Publication](https://doi.org/10.1109/ANDESCON56260.2022.9989578)
 
-The article introduces a method to detect and classify blueberries' ripeness levels in an agro-industrial farm, leveraging the Mask R-CNN and a custom convolutional neural network (CNN). Key steps include:
+In this project is introduced a method to detect and classify blueberries' ripeness levels in an agro-industrial farm, leveraging the Mask R-CNN and a custom convolutional neural network (CNN). Key steps include:
 
 - Creation of a dataset for training and validation.
 - Manual generation of masks for blueberries in images to label them based on five ripeness stages.
@@ -57,8 +57,7 @@ Mask R-CNN, convolutional neural network (CNN), Python, OpeCVz
 
 #### Development and implementation of a Multifunctional Automated Machine for the Sowing of Seeds of Different Sizes in multi-cell trays and Pealing of Seedlings according to the quality of Growth in Nurseries of the La Libertad Region-Peru (_March 2023 - December 2023_)
 
-Summary:
-The study presents an innovative solution for automated grading of artichoke seedlings, a pivotal step in the transplantation workflow.
+This project presents an innovative solution for automated grading of artichoke seedlings, a pivotal step in the transplantation workflow.
 
 - Acquisition of seedling images from vertical and horizontal viewpoints using depth cameras.
 - Segmentation of these images to extract morphological attributes: width, height, and leaf area.
