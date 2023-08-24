@@ -14,7 +14,7 @@ I have experience with programming languages python, matlab, C++ in applications
 
 ### Projects
 
-**Development and implementation of a robotic system to carry out an efficient and continuous quality control on seedlings grown in Industrial Nurseries in La Libertad - Peru (_September 2021 - July 2023_)**
+**Development and implementation of a robotic system to carry out an efficient and continuous quality control on seedlings grown in Industrial Nurseries in La Libertad - Peru (_Match 2019 - June 2021_)**
 
 - Design a software architecture to manage the different sources of information (cameras, seedling positions, deep learning predictions).
 - Deploy the IoT platform based on NodeJS to manage the transplanting process of seedlings in a local and cloud environment.
