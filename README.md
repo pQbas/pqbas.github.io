@@ -1,13 +1,13 @@
-## Machine Learning Engeenier Portfolio
-### Profile Description
+# Machine Learning Engeenier Portfolio
+## Profile Description
 I have experience with programming languages python, matlab, C++ in applications related to Robotics, Artificial Vision and IoT. My interests are focused in artificial intelligence, robotics and academic research.
 
 ---
-### Education
+## Education
 - B.S., Electronic Eng. | Universidad Privada Antenor Orrego (_July 2023_)
 
 ---
-### Work Experience
+## Work Experience
 **Research assistant @ Multidisciplinary Research Laboratory (_September 2021 - July 2023_)**
 - Research latest techniques related to specific fields (deep learning, signal processing) and apply them to current robot projects.
 - Implement and optimize DL-methods to achieve real time detection/segmentation.
@@ -16,7 +16,7 @@ I have experience with programming languages python, matlab, C++ in applications
 - Present the research at international/national congress.
 
 ----
-### Projects
+## Projects
 
 **Development and implementation of a robotic system to carry out an efficient and continuous quality control on seedlings grown in Industrial Nurseries in La Libertad - Peru (_Match 2019 - June 2021_)**
 
