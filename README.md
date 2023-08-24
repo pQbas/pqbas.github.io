@@ -48,9 +48,10 @@ I have experience with programming languages python, matlab, C++ in applications
 
 #### Machine Learning Models Review ([Repository](https://github.com/pQbas/Machine-Learning-Models-Review.git))
 
-This is a personal project, where I implement Deep Learning models with self-study purposes.
+This repository is dedicated to the implementation of state-of-the-art Deep Learning models using the robust **PyTorch** framework. The emphasis is on both Image Classification and Semantic Segmentation tasks. The models are implemented from scratch and are tested on widely recognized datasets for consistency and performance benchmarking.
 
-#### SignatureMatching ([Repository](https://github.com/pQbas/Machine-Learning-Models-Review.git))
+
+#### SignatureMatching ([Repository](https://github.com/pQbas/SignatureMatcher.git))
 
 This is a personal project, where two images with signs are compared to measure his similarity.
 
