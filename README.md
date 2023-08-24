@@ -2,15 +2,15 @@
 
 **Technical Skills: Python, Pytorch, AWS**
 
-## Profile Description
+## 1. Profile Description
 I have experience with programming languages python, matlab, C++ in applications related to Robotics, Artificial Vision and IoT. My interests are focused in artificial intelligence, robotics and academic research.
 
 ---
-## Education
+## 2. Education
 - B.S., Electronic Eng. | Universidad Privada Antenor Orrego (_July 2023_)
 
 ---
-## Work Experience
+## 3. Work Experience
 **Research assistant @ Multidisciplinary Research Laboratory (_September 2021 - July 2023_)**
 - Research latest techniques related to specific fields (deep learning, signal processing) and apply them to current robot projects.
 - Implement and optimize DL-methods to achieve real time detection/segmentation.
@@ -19,7 +19,7 @@ I have experience with programming languages python, matlab, C++ in applications
 - Present the research at international/national congress.
 
 ----
-## Research Projects
+## 4. Research Projects
 
 #### Development and implementation of a robotic system to carry out an efficient and continuous quality control on seedlings grown in Industrial Nurseries in La Libertad - Peru (_Match 2019 - June 2021_)
 
@@ -44,7 +44,7 @@ I have experience with programming languages python, matlab, C++ in applications
 - Develop a classification method to categorize seedlings in good or not-good based on a criteria developed by experts in agroindustrial farms.
 - Implement techniques and compare to find the best one according to precision, inference time and computing resource consuming.
 
-## Personal Projects
+## 5. Personal Projects
 
 #### Machine Learning Models Review ([Repository](https://github.com/pQbas/Machine-Learning-Models-Review.git))
 
@@ -56,7 +56,7 @@ This is a personal project, where two images with signs are compared to measure 
 
 ---
 
-## Publications
+## 6. Publications
 
 - P. Cubas, J. Alva, S. Prado. “IIoT system for monitoring and analysis of the transplanting process of the artichoke seedling”. 2022 IEEE ANDESCON. https://doi.org/10.1109/ANDESCON56260.2022.9989611
 
