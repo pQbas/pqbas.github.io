@@ -16,7 +16,7 @@ I have experience with programming languages python, matlab, C++ in applications
 - Present the research at international/national congress.
 
 ----
-## Projects
+## Research Projects
 
 #### Development and implementation of a robotic system to carry out an efficient and continuous quality control on seedlings grown in Industrial Nurseries in La Libertad - Peru (_Match 2019 - June 2021_)
 
@@ -40,6 +40,16 @@ I have experience with programming languages python, matlab, C++ in applications
 - Learned and summarized the studies of object detection/segmentation techniques with deep learning, also classification methods based on self-supervised learning (autoencoders).
 - Develop a classification method to categorize seedlings in good or not-good based on a criteria developed by experts in agroindustrial farms.
 - Implement techniques and compare to find the best one according to precision, inference time and computing resource consuming.
+
+## Personal Projects
+
+#### Machine Learning Models Review ([Repository](https://github.com/pQbas/Machine-Learning-Models-Review.git))
+
+This is a personal project, where I implement Deep Learning models with self-study purposes.
+
+#### SignatureMatching ([Repository](https://github.com/pQbas/Machine-Learning-Models-Review.git))
+
+This is a personal project, where two images with signs are compared to measure his similarity.
 
 ---
 
