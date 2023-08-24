@@ -14,16 +14,18 @@ I have experience with programming languages python, matlab, C++ in applications
 ---
 ## 3. Work Experience
 **Research assistant @ Multidisciplinary Research Laboratory (_September 2021 - July 2023_)**
-- Research latest techniques related to specific fields (deep learning, signal processing) and apply them to current robot projects.
-- Implement and optimize DL-methods to achieve real time detection/segmentation.
-- Implement signal processing methods (analog/digital).
-- Writing final reports that are presented at each stage of the research projects.
-- Present the research at international/national congress.
+- Identify requirements of the current robotics project and propose strategies which involve DL/ML methods.
+- Perform data labeling over data recollected via online or during field visits.
+- Implement DL/ML models using Python, PyTorch, TensorFlow.
+- Train and test DL/ML models employing platforms such as Google-Colab, Gradient.
+- Writing and present reports at each stage of the project.
 
 ----
-## 4. Research Projects
+## 4. Projects
 
-#### Development and implementation of a robotic system to carry out an efficient and continuous quality control on seedlings grown in Industrial Nurseries in La Libertad - Peru (_Match 2019 - June 2021_)
+<!-- #### Development and implementation of a robotic system to carry out an efficient and continuous quality control on seedlings grown in Industrial Nurseries in La Libertad - Peru (_Match 2019 - June 2021_) -->
+
+### IIoT system for monitoring and analysis of the transplanting process of the artichoke seedling
 
 [Publication](https://doi.org/10.1109/ANDESCON56260.2022.9989611)
 
@@ -38,7 +40,8 @@ This project involved enhancing a computer vision system and its IIoT platform t
 
 
 
-#### Robotic system for efficient and continuous quality control of the growth of industrial nursery seedlings in the La Libertad region of Peru (_March 2021 - August 2023_)
+<!-- #### Robotic system for efficient and continuous quality control of the growth of industrial nursery seedlings in the La Libertad region of Peru (_March 2021 - August 2023_) -->
+### Detection and Classification of ventura-blueberries in five levels of ripeness from images taken during pre-harvest stage using Deep Learning techniques
 
 [Publication](https://doi.org/10.1109/ANDESCON56260.2022.9989578)
 
@@ -49,9 +52,11 @@ In this project is introduced a method to detect and classify blueberries' ripen
 - Implementation of two deep learning models for blueberry detection and ripeness classification.
 - Attainment of a 90.74% accuracy rate in the blueberry classification task with the proposed models.
 
-**Technologies Used:** Mask R-CNN, convolutional neural network (CNN), Python, OpeCVz
+**Technologies Used:** Mask R-CNN, convolutional neural network (CNN), Python, OpeCV
 
-#### Development and implementation of a Multifunctional Automated Machine for the Sowing of Seeds of Different Sizes in multi-cell trays and Pealing of Seedlings according to the quality of Growth in Nurseries of the La Libertad Region-Peru (_March 2023 - December 2023_)
+<!-- #### Development and implementation of a Multifunctional Automated Machine for the Sowing of Seeds of Different Sizes in multi-cell trays and Pealing of Seedlings according to the quality of Growth in Nurseries of the La Libertad Region-Peru (_March 2023 - December 2023_) -->
+
+### Deep Learning-based Segmentation and Classification System for Artichoke Seedling Grading
 
 This project presents an innovative solution for automated grading of artichoke seedlings, a pivotal step in the transplantation workflow.
 
@@ -62,14 +67,13 @@ This project presents an innovative solution for automated grading of artichoke 
 
 **Technologies Used:** Depth cameras, Mask R-CNN, YOLOv8, Multi-Layer Perceptron (MLP).
 
-## 5. Personal Projects
 
 ### Machine Learning Models Review 
 [Repository](https://github.com/pQbas/Machine-Learning-Models-Review.git)
 
 This repository is dedicated to the implementation of state-of-the-art Deep Learning models using the robust PyTorch framework. The emphasis is on both Image Classification and Semantic Segmentation tasks. The models are implemented from scratch and are tested on widely recognized datasets for consistency and performance benchmarking.
 
-***Key-words: supervised learning, image classification, semantic segmentation***
+**Technologies Used:** supervised learning, image classification, semantic segmentation
 
 
 ### SignatureMatching 
@@ -77,7 +81,7 @@ This repository is dedicated to the implementation of state-of-the-art Deep Lear
 
 In this repository, we embark on the journey of capturing the essence of visual signs using a convolutional encoder. The primary objective is to extract significant features that can discern between signs and determine if they are identical, i.e. the similarity between two images with signatures. The unique approach taken here lies in leveraging a semi-supervised learning methodology, bridging the gap between labeled and unlabeled data, ultimately aiming for a more generalized and robust feature representation.
 
-***Key-words: semi-supervised learning, convolutional encoder, similarity***
+**Technologies Used:** semi-supervised learning, convolutional encoder, similarity
 
 ---
 
