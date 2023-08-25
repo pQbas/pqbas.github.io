@@ -12,13 +12,25 @@ I have experience with programming languages python, matlab, C++ in applications
 - B.S., Electronic Eng. | Universidad Privada Antenor Orrego (_July 2023_)
 
 ---
-## 3. Work Experience
+## 3. Experience
 **Research assistant @ Multidisciplinary Research Laboratory (_September 2021 - July 2023_)**
 - Identify requirements of the current robotics project and propose strategies which involve DL/ML methods.
 - Perform data labeling over data recollected via online or during field visits.
 - Implement DL/ML models using Python, PyTorch, TensorFlow.
 - Train and test DL/ML models employing platforms such as Google-Colab, Gradient.
 - Writing and present reports at each stage of the project.
+
+
+**Leader Student (_March 2022 - July 2022_) @ Universidad Privada Antenor Orrego, Trujillo, Peru** 
+- Attentively understanding student concerns, queries, and feedback during tutoring sessions.
+- Regularly seeking feedback to continuously improve teaching methods and approaches.
+- Organizing open discussion sessions where students could freely share their insights and knowledge.
+
+
+**Freelancer (_March 2023 - July 2023_) @ Project: SignatureMatching** 
+- Development of a DL strategy to identify the similarity of two signatures.
+- Deployment on AWS platform using SageMaker and Lambda functions services.
+
 
 ----
 ## 4. Projects
