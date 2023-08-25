@@ -1,6 +1,6 @@
 # Machine Learning Engeenier Portfolio
 
-**Technical Skills: Python, Pytorch, OpenCV, Numpy AWS**
+**Technical Skills: Python, Pytorch, TF, NLPs, AWS**
 
 **Personal Skills: Adaptability, Active Listening, Collaborative Problem Solving, Open-mindedness, Willingness to Share, Task Delegation**
 
