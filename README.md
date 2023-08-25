@@ -77,7 +77,7 @@ This repository is dedicated to the implementation of state-of-the-art Deep Lear
 
 
 ### SignatureMatching 
-[Repository](https://github.com/pQbas/SignatureMatcher.git)
+<!-- [Repository](https://github.com/pQbas/SignatureMatcher.git) -->
 
 In this repository, we embark on the journey of capturing the essence of visual signs using a convolutional encoder. The primary objective is to extract significant features that can discern between signs and determine if they are identical, i.e. the similarity between two images with signatures. The unique approach taken here lies in leveraging a semi-supervised learning methodology, bridging the gap between labeled and unlabeled data, ultimately aiming for a more generalized and robust feature representation.
 
