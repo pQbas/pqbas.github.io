@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percy Cubas | ML Engineer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #1a1a2e;
+            --accent: #4361ee;
+            --accent-light: #4895ef;
+            --text: #2d3436;
+            --text-light: #636e72;
+            --bg: #fafafa;
+            --card-bg: #ffffff;
+            --border: #e9ecef;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: var(--accent-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, #16213e 50%, #0f3460 100%);
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(67, 97, 238, 0.15) 0%, transparent 60%),
+                        radial-gradient(circle at 70% 80%, rgba(72, 149, 239, 0.1) 0%, transparent 50%);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(255, 255, 255, 0.2);
+            margin-bottom: 24px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero .subtitle {
+            font-size: 1.15rem;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 24px;
+            font-weight: 400;
+        }
+
+        .hero .links {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero .links a {
+            color: rgba(255, 255, 255, 0.85);
+            padding: 8px 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 24px;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .hero .links a:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
+        /* Skills bar */
+        .skills-bar {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 20px;
+        }
+
+        .skills-bar .container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .skill-tag {
+            background: #f0f3ff;
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Main content */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 48px 0;
+        }
+
+        section + section {
+            border-top: 1px solid var(--border);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 32px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 28px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        /* About */
+        .about-text {
+            font-size: 1.05rem;
+            color: var(--text-light);
+            max-width: 750px;
+        }
+
+        /* Education */
+        .edu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .edu-item h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .edu-item .date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .edu-item .institution {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            width: 100%;
+        }
+
+        /* Experience */
+        .exp-category {
+            margin-bottom: 40px;
+        }
+
+        .exp-category:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-category-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.85rem;
+            margin-bottom: 20px;
+        }
+
+        .exp-item {
+            margin-bottom: 32px;
+            padding-left: 24px;
+            border-left: 2px solid var(--border);
+            position: relative;
+        }
+
+        .exp-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 6px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .exp-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .exp-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-bottom: 4px;
+        }
+
+        .exp-header h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .exp-header .date {
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .exp-org {
+            color: var(--accent);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .exp-item ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .exp-item li {
+            color: var(--text-light);
+            font-size: 0.93rem;
+            padding: 3px 0;
+            padding-left: 16px;
+            position: relative;
+        }
+
+        .exp-item li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 12px;
+            width: 6px;
+            height: 1px;
+            background: var(--text-light);
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 28px;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            transform: translateY(-2px);
+        }
+
+        .project-card h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .project-card p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 14px;
+            line-height: 1.6;
+        }
+
+        .project-card .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 14px;
+        }
+
+        .tech-tag {
+            background: #f8f9fa;
+            color: var(--text-light);
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.78rem;
+        }
+
+        .project-card .project-link {
+            font-size: 0.88rem;
+            font-weight: 500;
+        }
+
+        /* Publications */
+        .pub-item {
+            padding: 20px 0;
+        }
+
+        .pub-item + .pub-item {
+            border-top: 1px solid var(--border);
+        }
+
+        .pub-item p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .pub-item .pub-venue {
+            color: var(--accent);
+            font-weight: 500;
+        }
+
+        .pub-item a {
+            display: inline-block;
+            margin-top: 6px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 32px 20px;
+            color: var(--text-light);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero {
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .exp-header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="profile.jpeg" alt="Percy Cubas" class="profile-img">
+            <h1>Percy Cubas</h1>
+            <p class="subtitle">AI &amp; Machine Learning Engineer</p>
+            <div class="links">
+                <a href="https://github.com/pQbas" target="_blank">GitHub</a>
+                <a href="mailto:pcubasm1@gmail.com">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills -->
+    <div class="skills-bar">
+        <div class="container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Computer Vision</span>
+            <span class="skill-tag">LLMs</span>
+            <span class="skill-tag">AWS</span>
+            <span class="skill-tag">ROS</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Robotics</span>
+        </div>
+    </div>
+
+    <main class="container">
+
+        <!-- About -->
+        <section>
+            <h2 class="section-title">About</h2>
+            <p class="about-text">
+                AI Engineer with experience spanning computer vision, deep learning, robotics, and full-stack development. I build end-to-end ML pipelines&mdash;from data acquisition and model training to cloud deployment&mdash;and enjoy bridging the gap between research and production systems.
+            </p>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2 class="section-title">Education</h2>
+            <div class="edu-item">
+                <h3>B.S. in Electronic Engineering</h3>
+                <span class="date">July 2023</span>
+                <span class="institution">Universidad Privada Antenor Orrego, Trujillo, Peru</span>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <h2 class="section-title">Experience</h2>
+
+            <div class="exp-category">
+                <div class="exp-category-title">Industry</div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>AI Engineer</h3>
+                        <span class="date">Oct 2025 &ndash; Present</span>
+                    </div>
+                    <div class="exp-org">Indra</div>
+                    <ul>
+                        <li>Led a team of 4 developers, managing task coordination, technical direction, and stakeholder feedback across multiple AI projects</li>
+                        <li>Built a defect detection pipeline (Escania) using YOLO with SageMaker training, model registry, and serverless inference</li>
+                        <li>Designed a scalable Agentic RAG platform (Ragia) with hybrid retrieval (dense + sparse), semantic chunking, and autonomous tool-calling agents</li>
+                        <li>Developed an automated QA system (Analitia) for call center audio analysis using parallel AI agents, AWS Transcribe, and LLMs</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>AI Implementation Engineer</h3>
+                        <span class="date">Dec 2024 &ndash; Sep 2025</span>
+                    </div>
+                    <div class="exp-org">YaVendio</div>
+                    <ul>
+                        <li>Implemented AI-Agents for automated sales using LLMs (OpenAI, Claude, Gemini) and prompt engineering</li>
+                        <li>Developed CLI tools and integrated Model Context Protocol (MCP) for internal process automation</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>Jr. Full Stack Developer</h3>
+                        <span class="date">Mar 2024 &ndash; Dec 2024</span>
+                    </div>
+                    <div class="exp-org">IDEGO STANDARD</div>
+                    <ul>
+                        <li>Maintained and added features to Maersk Peru's order management platform, including import/export flows and document handling</li>
+                        <li>Implemented backend microservices in Python/Django integrated with Azure services</li>
+                        <li>Led a team of 3 developers expanding the financial back office for BCP account transfers</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="exp-category">
+                <div class="exp-category-title">Research</div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>Computer Vision Engineer</h3>
+                        <span class="date">Nov 2024 &ndash; Present</span>
+                    </div>
+                    <div class="exp-org">LABINM &mdash; UPAO</div>
+                    <ul>
+                        <li>Contributed to PROCIENCIA-funded project (PE501086701-2024) in precision agriculture and robotics</li>
+                        <li>Built a data acquisition platform on ROS for a mobile robot, enabling non-technical users to capture video with a single click, reducing setup time from ~10 min to seconds</li>
+                        <li>Led a team of 3 interns building a modular pipeline for preprocessing and labeling</li>
+                        <li>Managed code versioning and collaboration using GitHub across training and labeling workflows</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>Student Researcher</h3>
+                        <span class="date">Jun 2020 &ndash; Feb 2024</span>
+                    </div>
+                    <div class="exp-org">LABINM &mdash; UPAO</div>
+                    <ul>
+                        <li>PROCIENCIA-funded research in computer vision, robotics, and embedded sensing</li>
+                        <li>Designed CV strategies for crop classification, detection, and segmentation using CNNs (YOLOv7/v8, Mask R-CNN) and MLPs</li>
+                        <li>Managed datasets of 800+ images (artichokes and blueberries), including labeling with Roboflow</li>
+                        <li>Configured simulation environments with ROS-Noetic, rviz, Gazebo, and ZED cameras, integrating models on a mobile robot with Jetson Xavier</li>
+                        <li>Collaborated on a PPG-based optosensor, implementing digital filters in C++ for Arduino</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section>
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>LabelFlow &mdash; Video Annotation Tool</h3>
+                    <p>Open-source video annotation tool with motion-aware propagation using optical flow, YOLO re-detection, and region matching. Supports automatic object tracking across frames with persistent identity assignment and bulk operations.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Optical Flow</span>
+                        <span class="tech-tag">YOLO</span>
+                        <span class="tech-tag">Object Tracking</span>
+                    </div>
+                    <a href="https://github.com/pQbas/label-flow" class="project-link" target="_blank">View Repository &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Signature Verification via Siamese CNNs</h3>
+                    <p>Siamese CNN for signature comparison based on learned representations, deployed as API on AWS (Lambda, EC2). Optimized inference using ONNX runtime and tracked experiments with Weights &amp; Biases.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Siamese CNN</span>
+                        <span class="tech-tag">ONNX</span>
+                        <span class="tech-tag">AWS Lambda</span>
+                        <span class="tech-tag">W&amp;B</span>
+                    </div>
+                    <a href="https://github.com/pQbas/signature-matcher" class="project-link" target="_blank">View Repository &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Blueberry Ripeness Detection &amp; Classification</h3>
+                    <p>Detect and classify blueberries' ripeness across five levels using Mask R-CNN and a custom CNN. Achieved 90.74% accuracy in an agro-industrial farm setting.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Mask R-CNN</span>
+                        <span class="tech-tag">CNN</span>
+                        <span class="tech-tag">OpenCV</span>
+                    </div>
+                    <a href="https://doi.org/10.1109/ANDESCON56260.2022.9989578" class="project-link" target="_blank">View Publication &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>IIoT System for Seedling Transplanting</h3>
+                    <p>Enhanced a computer vision system and IIoT platform to assist a cartesian robot in transplanting artichoke seedlings. Deployed on an external web server via the FRED service.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">IIoT</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">FRED</span>
+                    </div>
+                    <a href="https://doi.org/10.1109/ANDESCON56260.2022.9989611" class="project-link" target="_blank">View Publication &rarr;</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>Artichoke Seedling Grading System</h3>
+                    <p>Automated grading of artichoke seedlings using depth cameras and deep learning. Deployed Mask R-CNN and YOLOv8 for segmentation, plus an MLP classifier achieving 85.19% accuracy.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">YOLOv8</span>
+                        <span class="tech-tag">Mask R-CNN</span>
+                        <span class="tech-tag">MLP</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <h3>ML Models Review</h3>
+                    <p>Implementation of state-of-the-art Deep Learning models from scratch using PyTorch, focused on image classification and semantic segmentation.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">Classification</span>
+                        <span class="tech-tag">Segmentation</span>
+                    </div>
+                    <a href="https://github.com/pQbas/Machine-Learning-Models-Review" class="project-link" target="_blank">View Repository &rarr;</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Publications -->
+        <section>
+            <h2 class="section-title">Publications</h2>
+
+            <div class="pub-item">
+                <p>P. Cubas, J. Alva, S. Prado. "IIoT system for monitoring and analysis of the transplanting process of the artichoke seedling." <span class="pub-venue">2022 IEEE ANDESCON.</span></p>
+                <a href="https://doi.org/10.1109/ANDESCON56260.2022.9989611" target="_blank">doi.org/10.1109/ANDESCON56260.2022.9989611 &rarr;</a>
+            </div>
+
+            <div class="pub-item">
+                <p>P. Cubas, E. Fiestas, S. Prado. "Detection and Classification of ventura-blueberries in five levels of ripeness from images taken during pre-harvest stage using Deep Learning techniques." <span class="pub-venue">2022 IEEE ANDESCON.</span></p>
+                <a href="https://doi.org/10.1109/ANDESCON56260.2022.9989578" target="_blank">doi.org/10.1109/ANDESCON56260.2022.9989578 &rarr;</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Percy Cubas &middot; 2025</p>
+    </footer>
+
+</body>
+</html>
