@@ -87,25 +87,20 @@
             color: var(--accent);
         }
 
-        /* Nav */
-        nav {
-            border-bottom: 1px solid var(--border);
-            padding: 14px 0;
-        }
-
-        nav .container {
+        .header-nav {
             display: flex;
-            gap: 24px;
+            gap: 20px;
             flex-wrap: wrap;
+            margin-top: 12px;
         }
 
-        nav a {
+        .header-nav a {
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             font-weight: 500;
         }
 
-        nav a:hover {
+        .header-nav a:hover {
             color: var(--text);
             text-decoration: none;
         }
@@ -377,20 +372,16 @@
                         <a href="https://www.linkedin.com/in/percy-cubas/" target="_blank">LinkedIn</a>
                         <a href="mailto:pcubasm1@gmail.com">pcubasm1@gmail.com</a>
                     </div>
+                    <div class="header-nav">
+                        <a href="#about">About</a>
+                        <a href="#publications">Publications</a>
+                        <a href="#experience">Experience</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#education">Education</a>
+                    </div>
                 </div>
             </div>
         </header>
-
-        <!-- Nav -->
-        <nav>
-            <div class="container" style="padding: 0;">
-                <a href="#about">About</a>
-                <a href="#publications">Publications</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-                <a href="#education">Education</a>
-            </div>
-        </nav>
 
         <!-- About -->
         <section id="about">
@@ -405,16 +396,19 @@
                 <span class="skill-tag">PyTorch</span>
                 <span class="skill-tag">OpenCV</span>
                 <span class="skill-tag">YOLO</span>
+                <span class="skill-tag">Mask R-CNN</span>
                 <span class="skill-tag">ONNX</span>
-                <span class="skill-tag">ROS</span>
+                <span class="skill-tag">W&amp;B</span>
+                <span class="skill-tag">LangGraph</span>
+                <span class="skill-tag">LangSmith</span>
+                <span class="skill-tag">ROS-Noetic</span>
                 <span class="skill-tag">Gazebo</span>
+                <span class="skill-tag">ZED SDK</span>
+                <span class="skill-tag">Jetson Xavier</span>
                 <span class="skill-tag">AWS</span>
-                <span class="skill-tag">Azure</span>
-                <span class="skill-tag">FastAPI</span>
-                <span class="skill-tag">Django</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">PostgreSQL</span>
                 <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Linux</span>
             </div>
         </section>
 
@@ -430,19 +424,19 @@
             </div>
 
             <div class="pub-item">
-                <div class="pub-title">Artificial Vision Strategy for Ripeness Assessment of Blueberries on Images Taken During Pre-Harvest Stage Using Deep Learning Techniques</div>
+                <div class="pub-title">Artificial Vision Strategy for Ripeness Assessment of Blueberries</div>
                 <div class="pub-authors">P. Cubas, R. Huaman, S. Prado</div>
-                <div class="pub-venue">IEEE XXX INTERCON, Sep 2023</div>
+                <div class="pub-venue">IEEE INTERCON, Sept 2023</div>
             </div>
 
             <div class="pub-item">
                 <div class="pub-title">Deep Learning-based Segmentation and Classification System for Artichoke Seedling Grading</div>
                 <div class="pub-authors">P. Cubas, R. Huaman, S. Prado</div>
-                <div class="pub-venue">IEEE XXX INTERCON, Sep 2023</div>
+                <div class="pub-venue">IEEE INTERCON, Sept 2023</div>
             </div>
 
             <div class="pub-item">
-                <div class="pub-title">Detection and Classification of Ventura-Blueberries in Five Levels of Ripeness from Images Taken During Pre-Harvest Stage Using Deep Learning Techniques</div>
+                <div class="pub-title">Detection and Classification of Ventura-Blueberries in Five Levels of Ripeness</div>
                 <div class="pub-authors">P. Cubas, E. Fiestas, S. Prado</div>
                 <div class="pub-venue">IEEE ANDESCON, Nov 2022</div>
                 <a href="https://doi.org/10.1109/ANDESCON56260.2022.9989578" class="pub-link" target="_blank">Paper</a>
@@ -470,22 +464,23 @@
                     </div>
                     <div class="exp-org">Indra</div>
                     <ul>
-                        <li>Led a team of 4 developers, managing task coordination, technical direction, and stakeholder feedback across multiple AI projects</li>
-                        <li>Built a defect detection pipeline (Escania) using YOLO with SageMaker training, model registry, and serverless inference</li>
-                        <li>Designed a scalable Agentic RAG platform (Ragia) with hybrid retrieval (dense + sparse), semantic chunking, and autonomous tool-calling agents</li>
-                        <li>Developed an automated QA system (Analitia) for call center audio analysis using parallel AI agents, AWS Transcribe, and LLMs</li>
+                        <li>Contributed to system design, technical coordination, and development of multiple AI projects</li>
+                        <li>Escania: Full-stack document defect detection platform with YOLO pipeline, SageMaker training, and serverless inference</li>
+                        <li>Ragia: Highly scalable Agentic RAG platform with hybrid retrieval, semantic chunking, and autonomous tool-calling agents</li>
+                        <li>Analitia: Automated QA system for call centers using AWS Transcribe and parallel AI agents</li>
                     </ul>
                 </div>
 
                 <div class="exp-item">
                     <div class="exp-header">
                         <h3>AI Implementation Engineer</h3>
-                        <span class="date">Dec 2024 - Sep 2025</span>
+                        <span class="date">Dec 2024 - Sept 2025</span>
                     </div>
                     <div class="exp-org">YaVendio</div>
                     <ul>
-                        <li>Implemented AI-Agents for automated sales using LLMs (OpenAI, Claude, Gemini) and prompt engineering</li>
-                        <li>Developed CLI tools and integrated Model Context Protocol (MCP) for internal process automation</li>
+                        <li>Implemented AI-Agents for automated sales using LLMs (OpenAI, Claude, Gemini), LangSmith, and prompt engineering</li>
+                        <li>Developed scripts and a CLI toolkit to streamline internal processes with MCP integration in Cursor</li>
+                        <li>Improved LangGraph-based prompt generation API, optimizing interaction quality and AI-Agent adaptability</li>
                     </ul>
                 </div>
 
@@ -511,10 +506,10 @@
                         <h3>Computer Vision Engineer</h3>
                         <span class="date">Nov 2024 - Present</span>
                     </div>
-                    <div class="exp-org">LABINM - UPAO</div>
+                    <div class="exp-org">LABINM - UPAO, Trujillo, Peru</div>
                     <ul>
                         <li>Contributed to PROCIENCIA-funded project (PE501086701-2024) in precision agriculture and robotics</li>
-                        <li>Built a data acquisition platform on ROS for a mobile robot, enabling non-technical users to capture video with a single click, reducing setup time from ~10 min to seconds</li>
+                        <li>Built a data acquisition platform on ROS for a mobile robot equipped with a ZED 2i stereo camera, enabling non-technical users to capture video from field environments</li>
                         <li>Led a team of 3 interns building a modular pipeline for preprocessing and labeling</li>
                         <li>Managed code versioning and collaboration using GitHub across training and labeling workflows</li>
                     </ul>
@@ -522,16 +517,27 @@
 
                 <div class="exp-item">
                     <div class="exp-header">
-                        <h3>Student Researcher</h3>
-                        <span class="date">Jun 2020 - Feb 2024</span>
+                        <h3>Computer Vision Intern</h3>
+                        <span class="date">Sept 2022 - Feb 2024</span>
                     </div>
-                    <div class="exp-org">LABINM - UPAO</div>
+                    <div class="exp-org">LABINM - UPAO, Trujillo, Peru</div>
                     <ul>
-                        <li>PROCIENCIA-funded research in computer vision, robotics, and embedded sensing</li>
-                        <li>Designed CV strategies for crop classification, detection, and segmentation using CNNs (YOLOv7/v8, Mask R-CNN) and MLPs</li>
-                        <li>Managed datasets of 800+ images (artichokes and blueberries), including labeling with Roboflow</li>
+                        <li>Designed and implemented detection and segmentation strategies for crops (blueberries and artichokes) using YOLOv7/v8, Mask R-CNN, and MLPs</li>
                         <li>Configured simulation environments with ROS-Noetic, rviz, Gazebo, and ZED cameras, integrating models on a mobile robot with Jetson Xavier</li>
-                        <li>Collaborated on a PPG-based optosensor, implementing digital filters in C++ for Arduino</li>
+                        <li>Collaborated on the redesign of a PPG-based optosensor, implementing digital filters in C++ for Arduino</li>
+                    </ul>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h3>Research Student</h3>
+                        <span class="date">Jul 2020 - Sept 2022</span>
+                    </div>
+                    <div class="exp-org">LABINM - UPAO, Trujillo, Peru</div>
+                    <ul>
+                        <li>Restored and deployed an IIoT system for an artichoke project, configuring and managing the Linux environment</li>
+                        <li>Researched state of the art in crop detection and classification, evaluating algorithms such as Mask R-CNN and YOLO</li>
+                        <li>Managed blueberry image datasets, including labeling with Roboflow</li>
                     </ul>
                 </div>
             </div>
@@ -562,38 +568,6 @@
                     <span class="tech-tag">W&amp;B</span>
                 </div>
                 <a href="https://github.com/pQbas/signature-matcher" class="project-link" target="_blank">Repository</a>
-            </div>
-
-            <div class="project-item">
-                <h3>Blueberry Ripeness Detection &amp; Classification</h3>
-                <p>Detect and classify blueberries' ripeness across five levels using Mask R-CNN and a custom CNN. Achieved 90.74% accuracy in an agro-industrial farm setting.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Mask R-CNN</span>
-                    <span class="tech-tag">CNN</span>
-                    <span class="tech-tag">OpenCV</span>
-                </div>
-                <a href="https://doi.org/10.1109/ANDESCON56260.2022.9989578" class="project-link" target="_blank">Publication</a>
-            </div>
-
-            <div class="project-item">
-                <h3>IIoT System for Seedling Transplanting</h3>
-                <p>Enhanced a computer vision system and IIoT platform to assist a cartesian robot in transplanting artichoke seedlings. Deployed on an external web server via the FRED service.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">IIoT</span>
-                    <span class="tech-tag">Computer Vision</span>
-                    <span class="tech-tag">FRED</span>
-                </div>
-                <a href="https://doi.org/10.1109/ANDESCON56260.2022.9989611" class="project-link" target="_blank">Publication</a>
-            </div>
-
-            <div class="project-item">
-                <h3>Artichoke Seedling Grading System</h3>
-                <p>Automated grading of artichoke seedlings using depth cameras and deep learning. Deployed Mask R-CNN and YOLOv8 for segmentation, plus an MLP classifier achieving 85.19% accuracy.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">YOLOv8</span>
-                    <span class="tech-tag">Mask R-CNN</span>
-                    <span class="tech-tag">MLP</span>
-                </div>
             </div>
 
             <div class="project-item">
