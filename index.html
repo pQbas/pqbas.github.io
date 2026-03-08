@@ -12,6 +12,11 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 60px;
+        }
+
         :root {
             --bg: #0d1117;
             --bg-secondary: #161b22;
@@ -26,6 +31,7 @@
             color: var(--text);
             background: var(--bg);
             line-height: 1.7;
+            padding-top: 48px;
         }
 
         a {
@@ -87,20 +93,29 @@
             color: var(--accent);
         }
 
-        .header-nav {
+        /* Fixed navbar */
+        .topnav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 12px 24px;
             display: flex;
-            gap: 20px;
+            justify-content: center;
+            gap: 28px;
             flex-wrap: wrap;
-            margin-top: 12px;
         }
 
-        .header-nav a {
+        .topnav a {
             color: var(--text-secondary);
             font-size: 0.85rem;
             font-weight: 500;
         }
 
-        .header-nav a:hover {
+        .topnav a:hover {
             color: var(--text);
             text-decoration: none;
         }
@@ -358,9 +373,18 @@
 </head>
 <body>
 
+    <!-- Fixed navbar -->
+    <nav class="topnav">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+    </nav>
+
     <div class="container">
 
-        <!-- Header -->
+        <!-- Hero -->
         <header class="header">
             <div class="header-inner">
                 <img src="profile.jpeg" alt="Percy Cubas" class="profile-img">
@@ -371,13 +395,6 @@
                         <a href="https://github.com/pQbas" target="_blank">GitHub</a>
                         <a href="https://www.linkedin.com/in/percy-cubas/" target="_blank">LinkedIn</a>
                         <a href="mailto:pcubasm1@gmail.com">pcubasm1@gmail.com</a>
-                    </div>
-                    <div class="header-nav">
-                        <a href="#about">About</a>
-                        <a href="#publications">Publications</a>
-                        <a href="#experience">Experience</a>
-                        <a href="#projects">Projects</a>
-                        <a href="#education">Education</a>
                     </div>
                 </div>
             </div>
